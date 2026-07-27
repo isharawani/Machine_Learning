@@ -53,7 +53,7 @@ history_minibatch = model.fit(X_train, y_train, epochs=100, batch_size=100, verb
 
 from tensorflow.keras import optimizers
      
-
+#for better noise reduction use momentum with sdg
 opt = optimizers.SGD(learning_rate = 0.01, momentum = 0.9)
      
 
